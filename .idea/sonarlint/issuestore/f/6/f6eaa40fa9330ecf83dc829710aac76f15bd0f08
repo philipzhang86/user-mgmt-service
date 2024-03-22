@@ -1,0 +1,6 @@
+
+	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(ì®êùûÿÿÿÿ8ïçê»æ1J$991c0401-4b26-4b0a-9101-f543d32100b5
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õçê»æ1J$b8a019cf-f98a-4a38-acc1-bc9180129a75
+˜
+java:S3305"UInject this field value directly into "redissonClient", the only method that uses it.(å½Æ8öçê»æ1J$2cc3c822-683e-4c0c-b594-1ccda32bbcf9
