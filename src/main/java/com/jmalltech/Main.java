@@ -3,15 +3,16 @@ package com.jmalltech;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.cache.annotation.EnableCaching;
 
-@EnableEurekaClient
-//@ComponentScan(basePackages = {"com"})
 @MapperScan(basePackages = {"com.jmalltech.mapper"})
+@EnableCaching
 @SpringBootApplication
-public class UserMgmtServiceApplication {
-
+//@EnableDiscoveryClient
+public class Main {
     public static void main(String[] args) {
-        SpringApplication.run(UserMgmtServiceApplication.class, args);
+        SpringApplication.run(Main.class, args);
+        System.out.println("Hello world!");
+        System.out.println(1/0);
     }
 }

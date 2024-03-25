@@ -26,3 +26,11 @@ G.idea/sonarlint/issuestore/a/3/a3505e6d209bdebab0125d7d82c25b45ca8c4633,4/b/4b
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+b
+2src/main/java/com/jmalltech/mapper/UserMapper.java,f/b/fbc7e3b564a0f24b2dcb73aee38e259b0fbcfb3c
+\
+,src/main/java/com/jmalltech/entity/User.java,7/4/74b1308e56dcafeaaf3de14a9ba4ed3701974c14
+h
+8src/main/java/com/jmalltech/controller/Hicontroller.java,7/c/7c444df4eb917038fbceeabc8f8e472ac0a12d87
+U
+%src/main/java/com/jmalltech/Main.java,9/f/9f93a41d4e96d67c1b721ef16768a225eb66f373
