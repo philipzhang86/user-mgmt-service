@@ -48,4 +48,6 @@ public class Client implements Serializable {
 
     @TableField(value = "updated_date", fill = FieldFill.INSERT_UPDATE)
     private Date updatedDate;
+
+    private static final long serialVersionUID = 1L;
 }

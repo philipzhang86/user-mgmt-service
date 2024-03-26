@@ -27,6 +27,8 @@ public class Staff implements Serializable {
     @TableField(value = "created_date", fill = FieldFill.INSERT)
     private Date createdDate;
 
-    @TableField(value = "created_date", fill = FieldFill.INSERT)
+    @TableField(value = "updated_date", fill = FieldFill.INSERT_UPDATE)
     private Date updatedDate;
+
+    private static final long serialVersionUID = 1L;
 }
