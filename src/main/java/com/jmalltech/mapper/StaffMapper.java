@@ -1,7 +1,8 @@
 package com.jmalltech.mapper;
 
-import com.jmalltech.entity.Staff;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.jmalltech.entity.Staff;
+import org.apache.ibatis.annotations.Param;
 
 /**
 * @author philipzhang
@@ -10,7 +11,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @Entity com.jmalltech.entity.Staff
 */
 public interface StaffMapper extends BaseMapper<Staff> {
-
+    Staff selectByUsername(@Param("username") String username);
 }
 
 

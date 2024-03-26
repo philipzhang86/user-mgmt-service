@@ -19,4 +19,11 @@
         email,role,created_date,
         updated_date
     </sql>
+
+    <select id="selectByUsername" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM public.mwms_staff
+        WHERE username = #{username}
+    </select>
 </mapper>

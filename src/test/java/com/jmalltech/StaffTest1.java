@@ -2,7 +2,8 @@ package com.jmalltech;
 
 import com.jmalltech.entity.Staff;
 import com.jmalltech.entity.StaffRole;
-import com.jmalltech.service.impl.StaffServiceImpl;
+import com.jmalltech.repository.impl.StaffServiceImpl;
+import com.jmalltech.service.crud.StaffCRUDService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,6 +12,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class StaffTest1 {
     @Autowired
     private StaffServiceImpl staffService;
+
+    @Autowired
+    private StaffCRUDService staffCRUDService;
     @Test
     public void test1() {
         Staff s = new Staff();
@@ -41,5 +45,16 @@ public class StaffTest1 {
         staffService.save(s);
         System.out.println(staffService.getById(2L));
         System.out.println(staffService.removeById(2L));
+        //Staff s2 = staffService.getByUsername("operator1");
+    }
+
+    @Test
+    public void test4(){
+        System.out.println(staffCRUDService.getById(1L));
+    }
+
+    @Test
+    public void test5(){
+        System.out.println(staffCRUDService.getByUsername("admin1"));
     }
 }
