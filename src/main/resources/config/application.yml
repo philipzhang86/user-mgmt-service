@@ -24,6 +24,8 @@ spring:
     import:
       - classpath:config/application.yml
       - classpath:config/redisson.yml
+  main:
+    allow-bean-definition-overriding: true
 
 
   kafka:

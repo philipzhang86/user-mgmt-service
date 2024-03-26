@@ -1,25 +1,21 @@
--- Table: public.mwms_user
 
--- DROP TABLE IF EXISTS public.mwms_user;
-
-CREATE TABLE IF NOT EXISTS public.mwms_user
+create table mwms_staff
 (
-    id integer NOT NULL DEFAULT nextval('mwms_user_id_seq'::regclass),
-    username character varying(100) COLLATE pg_catalog."default" NOT NULL,
-    password character varying(100) COLLATE pg_catalog."default" NOT NULL,
-    first_name character varying(32) COLLATE pg_catalog."default" NOT NULL,
-    last_name character varying(32) COLLATE pg_catalog."default" NOT NULL,
-    email character varying(64) COLLATE pg_catalog."default" NOT NULL,
-    created_by_id bigint,
-    updated_by_id bigint,
-    created_date timestamp without time zone,
-    updated_date timestamp without time zone,
-    CONSTRAINT mwms_user_pk PRIMARY KEY (id),
-    CONSTRAINT mwms_user_pk_2 UNIQUE (username),
-    CONSTRAINT mwms_user_pk_3 UNIQUE (email)
-)
+    id           serial
+        constraint mwms_staff_pk
+        primary key,
+    username     varchar(64)  not null
+        constraint mwms_staff_pk_2
+        unique,
+    password     varchar(64)  not null,
+    email        varchar(128) not null
+        constraint mwms_staff_pk_3
+        unique,
+    role         varchar(32)  not null,
+    created_date timestamp,
+    updated_date timestamp
+);
 
-    TABLESPACE pg_default;
+alter table mwms_staff
+    owner to postgres;
 
-ALTER TABLE IF EXISTS public.mwms_user
-    OWNER to postgres;

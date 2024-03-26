@@ -8,29 +8,25 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.util.Date;
 
-
-@TableName(value = "t_user", schema = "public")
-@Getter//用细颗粒度,而不是用@Data 这个大而全
+@Getter
 @Setter
+@TableName(value = "mwms_staff", schema = "public")
 @ToString
-public class User implements Serializable {
+public class Staff implements Serializable {
     @TableId(type = IdType.AUTO)
     private Long id;
 
-    private String name;
+    private String username;
 
-    private Integer age;
+    private String password;
 
     private String email;
+
+    private StaffRole role;
 
     @TableField(value = "created_date", fill = FieldFill.INSERT)
     private Date createdDate;
 
-    @TableField(value = "updated_date", fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = "created_date", fill = FieldFill.INSERT)
     private Date updatedDate;
-
-    private static final long serialVersionUID = 1L;
-
-
-
 }

@@ -1,0 +1,241 @@
+2024-03-25 17:12:27 - Starting Main using Java 17.0.9 with PID 14580 (/Users/philipzhang/Desktop/Work/my-final-project/MWMS/user-mgmt-service/target/classes started by philipzhang in /Users/philipzhang/Desktop/Work/my-final-project/MWMS/user-mgmt-service)
+2024-03-25 17:12:27 - Running with Spring Boot v3.0.13, Spring v6.0.14
+2024-03-25 17:12:27 - No active profile set, falling back to 1 default profile: "default"
+2024-03-25 17:12:27 - BeanFactory id=f657ee28-eb26-3e51-9b68-77c8dcbf131d
+2024-03-25 17:12:27 - Tomcat initialized with port(s): 9080 (http)
+2024-03-25 17:12:27 - Initializing ProtocolHandler ["http-nio-9080"]
+2024-03-25 17:12:27 - Starting service [Tomcat]
+2024-03-25 17:12:27 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-03-25 17:12:28 - Initializing Spring embedded WebApplicationContext
+2024-03-25 17:12:28 - Root WebApplicationContext: initialization completed in 824 ms
+2024-03-25 17:12:28 - 初始化 redis 配置
+2024-03-25 17:12:28 - Redisson 3.15.6
+2024-03-25 17:12:28 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2024-03-25 17:12:28 - new connection created: RedisConnection@1218661826 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x61bb529d, L:/127.0.0.1:51587 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1989964009 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x0048598b, L:/127.0.0.1:51588 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new connection created: RedisConnection@2071802502 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x97b5cb8b, L:/127.0.0.1:51583 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1870411212 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xf9b1c0a8, L:/127.0.0.1:51578 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new connection created: RedisConnection@771850991 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x55755396, L:/127.0.0.1:51579 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1224571963 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x5c00e0d2, L:/127.0.0.1:51586 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new connection created: RedisConnection@556182532 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x7082f22b, L:/127.0.0.1:51584 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1810064238 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xf58c2200, L:/127.0.0.1:51585 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new connection created: RedisConnection@656984326 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x1c810a09, L:/127.0.0.1:51580 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1695655719 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x9eb6e827, L:/127.0.0.1:51581 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - new pubsub connection created: RedisPubSubConnection@1821664769 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x88a3ee90, L:/127.0.0.1:51582 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:12:28 - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-03-25 17:12:28 - new connection created: RedisConnection@351061390 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x474f599a, L:/127.0.0.1:51596 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@69fb9809(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1140960884 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xf81ed410, L:/127.0.0.1:51598 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@8412bc5(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1778721406 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x2914d70f, L:/127.0.0.1:51592 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@583660c2(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@136735052 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x872b0bcf, L:/127.0.0.1:51594 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@48f305(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1153813104 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x34bf5c77, L:/127.0.0.1:51589 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@16a86d2d(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1607335721 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xcfca3900, L:/127.0.0.1:51591 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@37ade90a(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1667015477 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x2124229f, L:/127.0.0.1:51595 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@ce9176c(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1410009424 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xdd2f3349, L:/127.0.0.1:51597 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@a47a71(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@2021046476 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x2d1ee58f, L:/127.0.0.1:51590 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@4d165230(success: PONG)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1397980535 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x4d269955, L:/127.0.0.1:51593 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@204fbf65(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@620358047 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xb553a6ae, L:/127.0.0.1:51600 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@61fb6364(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@2086935449 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xf8e80262, L:/127.0.0.1:51599 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@39668a71(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1735806930 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x6ec21455, L:/127.0.0.1:51601 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@3d37aad(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - new connection created: RedisConnection@1107629899 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x4b0a1ebf, L:/127.0.0.1:51602 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@707816f(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:12:28 - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-03-25 17:12:28 - Init DruidDataSource
+2024-03-25 17:12:28 - {dataSource-1} inited
+2024-03-25 17:12:28 - Eureka HTTP Client uses RestTemplate.
+2024-03-25 17:12:28 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-25 17:12:28 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-25 17:12:28 - Setting initial instance status as: STARTING
+2024-03-25 17:12:28 - Initializing Eureka in region us-east-1
+2024-03-25 17:12:28 - Resolving eureka endpoints via configuration
+2024-03-25 17:12:28 - Disable delta property : false
+2024-03-25 17:12:28 - Single vip registry refresh property : null
+2024-03-25 17:12:28 - Force full registry fetch : false
+2024-03-25 17:12:28 - Application is null : false
+2024-03-25 17:12:28 - Registered Applications size is zero : true
+2024-03-25 17:12:28 - Application version is -1: true
+2024-03-25 17:12:28 - Getting all instance registry info from the eureka server
+2024-03-25 17:12:29 - The response status is 200
+2024-03-25 17:12:29 - Starting heartbeat executor: renew interval is: 30
+2024-03-25 17:12:29 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-03-25 17:12:29 - Discovery Client initialized at timestamp 1711401149132 with initial instances count: 1
+2024-03-25 17:12:29 - Registering application USER-SERVICE with eureka with status UP
+2024-03-25 17:12:29 - Saw local status change event StatusChangeEvent [timestamp=1711401149135, current=UP, previous=STARTING]
+2024-03-25 17:12:29 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080: registering service...
+2024-03-25 17:12:29 - Starting ProtocolHandler ["http-nio-9080"]
+2024-03-25 17:12:29 - Tomcat started on port(s): 9080 (http) with context path '/user-service'
+2024-03-25 17:12:29 - Updating port to 9080
+2024-03-25 17:12:29 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080 - registration status: 204
+2024-03-25 17:12:29 - Started Main in 2.187 seconds (process running for 2.476)
+2024-03-25 17:12:29 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-25 17:12:29 - Initializing Servlet 'dispatcherServlet'
+2024-03-25 17:12:29 - Completed initialization in 0 ms
+2024-03-25 17:12:57 - Unregistering application USER-SERVICE with eureka with status DOWN
+2024-03-25 17:12:57 - Saw local status change event StatusChangeEvent [timestamp=1711401177571, current=DOWN, previous=UP]
+2024-03-25 17:12:57 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080: registering service...
+2024-03-25 17:12:57 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080 - registration status: 204
+2024-03-25 17:12:57 - {dataSource-1} closing ...
+2024-03-25 17:12:57 - {dataSource-1} closed
+2024-03-25 17:12:57 - Shutting down DiscoveryClient ...
+2024-03-25 17:13:00 - task supervisor shutting down, can't accept the task
+2024-03-25 17:13:00 - Unregistering ...
+2024-03-25 17:13:00 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080 - deregister  status: 200
+2024-03-25 17:13:00 - Completed shut down of DiscoveryClient
+2024-03-25 17:13:19 - Starting Main using Java 17.0.9 with PID 14595 (/Users/philipzhang/Desktop/Work/my-final-project/MWMS/user-mgmt-service/target/classes started by philipzhang in /Users/philipzhang/Desktop/Work/my-final-project/MWMS/user-mgmt-service)
+2024-03-25 17:13:19 - Running with Spring Boot v3.0.13, Spring v6.0.14
+2024-03-25 17:13:19 - No active profile set, falling back to 1 default profile: "default"
+2024-03-25 17:13:20 - BeanFactory id=f657ee28-eb26-3e51-9b68-77c8dcbf131d
+2024-03-25 17:13:20 - Tomcat initialized with port(s): 9080 (http)
+2024-03-25 17:13:20 - Initializing ProtocolHandler ["http-nio-9080"]
+2024-03-25 17:13:20 - Starting service [Tomcat]
+2024-03-25 17:13:20 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-03-25 17:13:20 - Initializing Spring embedded WebApplicationContext
+2024-03-25 17:13:20 - Root WebApplicationContext: initialization completed in 751 ms
+2024-03-25 17:13:20 - 初始化 redis 配置
+2024-03-25 17:13:20 - Redisson 3.15.6
+2024-03-25 17:13:20 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2024-03-25 17:13:21 - new connection created: RedisConnection@865026747 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x8fb75c89, L:/127.0.0.1:51644 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new connection created: RedisConnection@836320431 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xce7558c3, L:/127.0.0.1:51649 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new connection created: RedisConnection@200319433 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xc47703a1, L:/127.0.0.1:51643 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new connection created: RedisConnection@529664264 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x72c19cbe, L:/127.0.0.1:51648 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new pubsub connection created: RedisPubSubConnection@190917992 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xed3b96d3, L:/127.0.0.1:51650 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new connection created: RedisConnection@2077919038 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xebc93add, L:/127.0.0.1:51645 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new connection created: RedisConnection@1836797733 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xa1b8bc74, L:/127.0.0.1:51646 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-03-25 17:13:21 - new connection created: RedisConnection@179885681 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xaa85871a, L:/127.0.0.1:51642 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new connection created: RedisConnection@377122351 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x83454a40, L:/127.0.0.1:51641 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new connection created: RedisConnection@641250131 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xa4f0ad8f, L:/127.0.0.1:51651 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new connection created: RedisConnection@1520459057 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x5b39a428, L:/127.0.0.1:51647 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - new connection created: RedisConnection@959871470 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x3371f4bf, L:/127.0.0.1:51652 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@c603396(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@1685110228 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x00970c5c, L:/127.0.0.1:51655 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@585eb0f6(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@1808025281 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x3396f6d1, L:/127.0.0.1:51656 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@2bc3596b(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@1829633101 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xda0f6b4b, L:/127.0.0.1:51653 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@76df3251(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@452046285 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x18a5543e, L:/127.0.0.1:51659 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@5653c7d0(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@206149155 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xc0eb2482, L:/127.0.0.1:51657 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@74740d39(success: PONG)], command=(PING), params=[], codec=null]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@1263167422 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x8adc0a4f, L:/127.0.0.1:51654 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@4b5283b4(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@813662765 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x0ccba9ab, L:/127.0.0.1:51658 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@17e3cff0(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@1257921373 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x34cccd7d, L:/127.0.0.1:51662 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@750465b3(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@964110795 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x2c323745, L:/127.0.0.1:51660 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@7c75a081(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@4242689 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x30c3fa49, L:/127.0.0.1:51664 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@4542236d(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@1347958337 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x88c6a62b, L:/127.0.0.1:51663 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@155ab22e(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@98471749 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x782a46ee, L:/127.0.0.1:51665 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@6378532c(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:13:21 - new connection created: RedisConnection@1736647765 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x496fa36d, L:/127.0.0.1:51661 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:13:21 - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-03-25 17:13:21 - Init DruidDataSource
+2024-03-25 17:13:21 - {dataSource-1} inited
+2024-03-25 17:13:21 - Eureka HTTP Client uses RestTemplate.
+2024-03-25 17:13:21 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-25 17:13:21 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-25 17:13:21 - Setting initial instance status as: STARTING
+2024-03-25 17:13:21 - Initializing Eureka in region us-east-1
+2024-03-25 17:13:21 - Resolving eureka endpoints via configuration
+2024-03-25 17:13:21 - Disable delta property : false
+2024-03-25 17:13:21 - Single vip registry refresh property : null
+2024-03-25 17:13:21 - Force full registry fetch : false
+2024-03-25 17:13:21 - Application is null : false
+2024-03-25 17:13:21 - Registered Applications size is zero : true
+2024-03-25 17:13:21 - Application version is -1: true
+2024-03-25 17:13:21 - Getting all instance registry info from the eureka server
+2024-03-25 17:13:21 - The response status is 200
+2024-03-25 17:13:21 - Starting heartbeat executor: renew interval is: 30
+2024-03-25 17:13:21 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-03-25 17:13:21 - Discovery Client initialized at timestamp 1711401201836 with initial instances count: 2
+2024-03-25 17:13:21 - Registering application USER-SERVICE with eureka with status UP
+2024-03-25 17:13:21 - Saw local status change event StatusChangeEvent [timestamp=1711401201839, current=UP, previous=STARTING]
+2024-03-25 17:13:21 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080: registering service...
+2024-03-25 17:13:21 - Starting ProtocolHandler ["http-nio-9080"]
+2024-03-25 17:13:21 - Tomcat started on port(s): 9080 (http) with context path '/user-service'
+2024-03-25 17:13:21 - Updating port to 9080
+2024-03-25 17:13:21 - Started Main in 2.078 seconds (process running for 2.363)
+2024-03-25 17:13:21 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080 - registration status: 204
+2024-03-25 17:13:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-25 17:13:22 - Initializing Servlet 'dispatcherServlet'
+2024-03-25 17:13:22 - Completed initialization in 1 ms
+2024-03-25 17:13:32 - Unregistering application USER-SERVICE with eureka with status DOWN
+2024-03-25 17:13:32 - Saw local status change event StatusChangeEvent [timestamp=1711401212769, current=DOWN, previous=UP]
+2024-03-25 17:13:32 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080: registering service...
+2024-03-25 17:13:32 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080 - registration status: 204
+2024-03-25 17:13:32 - {dataSource-1} closing ...
+2024-03-25 17:13:32 - {dataSource-1} closed
+2024-03-25 17:13:32 - Shutting down DiscoveryClient ...
+2024-03-25 17:13:35 - Unregistering ...
+2024-03-25 17:13:35 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080 - deregister  status: 200
+2024-03-25 17:13:35 - Completed shut down of DiscoveryClient
+2024-03-25 17:14:08 - Starting Main using Java 17.0.9 with PID 14610 (/Users/philipzhang/Desktop/Work/my-final-project/MWMS/user-mgmt-service/target/classes started by philipzhang in /Users/philipzhang/Desktop/Work/my-final-project/MWMS/user-mgmt-service)
+2024-03-25 17:14:08 - Running with Spring Boot v3.0.13, Spring v6.0.14
+2024-03-25 17:14:08 - No active profile set, falling back to 1 default profile: "default"
+2024-03-25 17:14:09 - BeanFactory id=f657ee28-eb26-3e51-9b68-77c8dcbf131d
+2024-03-25 17:14:09 - Tomcat initialized with port(s): 9080 (http)
+2024-03-25 17:14:09 - Initializing ProtocolHandler ["http-nio-9080"]
+2024-03-25 17:14:09 - Starting service [Tomcat]
+2024-03-25 17:14:09 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-03-25 17:14:09 - Initializing Spring embedded WebApplicationContext
+2024-03-25 17:14:09 - Root WebApplicationContext: initialization completed in 775 ms
+2024-03-25 17:14:09 - 初始化 redis 配置
+2024-03-25 17:14:09 - Redisson 3.15.6
+2024-03-25 17:14:09 - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2024-03-25 17:14:09 - new connection created: RedisConnection@1052153898 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x35aa8402, L:/127.0.0.1:51700 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@130352328 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x8b0da895, L:/127.0.0.1:51701 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@475063200 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x691eef6f, L:/127.0.0.1:51704 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@2034326214 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x0055c0ad, L:/127.0.0.1:51696 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@1830302228 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x2766cd36, L:/127.0.0.1:51698 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@675867627 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xd1a40574, L:/127.0.0.1:51703 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@108597726 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xc117448a, L:/127.0.0.1:51697 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@746344526 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x8dc03a74, L:/127.0.0.1:51705 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new pubsub connection created: RedisPubSubConnection@1280397843 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x06306f30, L:/127.0.0.1:51706 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@1935375846 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xd9dbda29, L:/127.0.0.1:51702 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@1558499819 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xac28fd02, L:/127.0.0.1:51699 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-03-25 17:14:09 - new connection created: RedisConnection@111889133 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xfd1cefe6, L:/127.0.0.1:51707 - R:127.0.0.1/127.0.0.1:6379], currentCommand=null]
+2024-03-25 17:14:09 - new connection created: RedisConnection@882881587 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xbe75bd45, L:/127.0.0.1:51708 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@55f0dc96(success: PONG)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@920579921 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x6b8032ed, L:/127.0.0.1:51711 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@7e9a0c53(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@18339418 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x51fb612f, L:/127.0.0.1:51709 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@4e93bb18(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@1381118217 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x1cbec2f7, L:/127.0.0.1:51716 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@4dcaa37f(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@1431959695 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x225a7961, L:/127.0.0.1:51713 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@6c169994(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@1653549106 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xf7a165db, L:/127.0.0.1:51710 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@47337d97(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@14552361 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x34456466, L:/127.0.0.1:51712 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@2725a137(success: PONG)], command=(PING), params=[], codec=null]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@583523335 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xa7af3089, L:/127.0.0.1:51714 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@113c72a6(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@1195645925 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x1d7857f3, L:/127.0.0.1:51715 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@3870ee92(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@1318193861 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xf6f71aae, L:/127.0.0.1:51718 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@2d279a3b(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@2066860668 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xfa96cc81, L:/127.0.0.1:51719 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@40772987(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@222130104 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0x4c964e6a, L:/127.0.0.1:51717 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@483ff07b(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - new connection created: RedisConnection@2040731286 [redisClient=[addr=redis://127.0.0.1:6379], channel=[id: 0xef45eb8e, L:/127.0.0.1:51720 - R:127.0.0.1/127.0.0.1:6379], currentCommand=CommandData [promise=RedissonPromise [promise=ImmediateEventExecutor$ImmediatePromise@3ca197c6(incomplete)], command=(PING), params=[], codec=org.redisson.client.codec.StringCodec]]
+2024-03-25 17:14:09 - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-03-25 17:14:09 - Init DruidDataSource
+2024-03-25 17:14:09 - {dataSource-1} inited
+2024-03-25 17:14:10 - Eureka HTTP Client uses RestTemplate.
+2024-03-25 17:14:10 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-25 17:14:10 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-25 17:14:10 - Setting initial instance status as: STARTING
+2024-03-25 17:14:10 - Initializing Eureka in region us-east-1
+2024-03-25 17:14:10 - Resolving eureka endpoints via configuration
+2024-03-25 17:14:10 - Disable delta property : false
+2024-03-25 17:14:10 - Single vip registry refresh property : null
+2024-03-25 17:14:10 - Force full registry fetch : false
+2024-03-25 17:14:10 - Application is null : false
+2024-03-25 17:14:10 - Registered Applications size is zero : true
+2024-03-25 17:14:10 - Application version is -1: true
+2024-03-25 17:14:10 - Getting all instance registry info from the eureka server
+2024-03-25 17:14:10 - The response status is 200
+2024-03-25 17:14:10 - Starting heartbeat executor: renew interval is: 30
+2024-03-25 17:14:10 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-03-25 17:14:10 - Discovery Client initialized at timestamp 1711401250458 with initial instances count: 1
+2024-03-25 17:14:10 - Registering application USER-SERVICE with eureka with status UP
+2024-03-25 17:14:10 - Saw local status change event StatusChangeEvent [timestamp=1711401250460, current=UP, previous=STARTING]
+2024-03-25 17:14:10 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080: registering service...
+2024-03-25 17:14:10 - Starting ProtocolHandler ["http-nio-9080"]
+2024-03-25 17:14:10 - Tomcat started on port(s): 9080 (http) with context path '/user-service'
+2024-03-25 17:14:10 - Updating port to 9080
+2024-03-25 17:14:10 - Started Main in 2.078 seconds (process running for 2.508)
+2024-03-25 17:14:10 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080 - registration status: 204
+2024-03-25 17:14:10 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-25 17:14:10 - Initializing Servlet 'dispatcherServlet'
+2024-03-25 17:14:10 - Completed initialization in 1 ms
+2024-03-25 17:15:00 - Unregistering application USER-SERVICE with eureka with status DOWN
+2024-03-25 17:15:00 - Saw local status change event StatusChangeEvent [timestamp=1711401300773, current=DOWN, previous=UP]
+2024-03-25 17:15:00 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080: registering service...
+2024-03-25 17:15:00 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080 - registration status: 204
+2024-03-25 17:15:00 - {dataSource-1} closing ...
+2024-03-25 17:15:00 - {dataSource-1} closed
+2024-03-25 17:15:00 - Shutting down DiscoveryClient ...
+2024-03-25 17:15:03 - Unregistering ...
+2024-03-25 17:15:03 - DiscoveryClient_USER-SERVICE/192.168.50.236:user-service:9080 - deregister  status: 200
+2024-03-25 17:15:03 - Completed shut down of DiscoveryClient
