@@ -37,6 +37,7 @@ public class StaffCRUDService {
     }
 
     @CachePut(value = "staff", key = "#staff.id", unless = "#result == null")
+    @CacheEvict(value = "staffList", allEntries = true)
     public Staff insert(Staff staff) {
         service.save(staff);
         return staff;

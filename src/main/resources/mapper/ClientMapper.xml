@@ -36,4 +36,14 @@
         FROM public.mwms_client
         WHERE username = #{username}
     </select>
+
+    <select id="selectClientsWithoutPassword" resultMap="BaseResultMap">
+        SELECT
+            id, username,
+            company_name, email, area_code,
+            phone, address, city,
+            state, country, created_by_id,
+            updated_by_id, created_date, updated_date
+        FROM public.mwms_client
+    </select>
 </mapper>

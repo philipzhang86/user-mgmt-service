@@ -1,8 +1,10 @@
 package com.jmalltech.mapper;
 
-import com.jmalltech.entity.Client;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.jmalltech.entity.Client;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
 * @author philipzhang
@@ -13,6 +15,7 @@ import org.apache.ibatis.annotations.Param;
 public interface ClientMapper extends BaseMapper<Client> {
     Client selectByUsername(@Param("username") String username);
 
+    List<Client> selectClientsWithoutPassword();
 }
 
 

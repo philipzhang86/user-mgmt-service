@@ -620,3 +620,5 @@ c
 3src/test/java/com/jmalltech/StaffCRUDCacheTest.java,a/3/a3b0bde8a2c014294b415bf4b855e33a53fe84f1
 j
 :src/main/java/com/jmalltech/service/ClientCRUDService.java,1/0/10831d8f474afa608e6b69f015b1bfeec051f0c5
+d
+4src/test/java/com/jmalltech/ClientCRUDCacheTest.java,a/c/ac24991c2e892e97a7207dd791812ef46a22dc3c
