@@ -5,21 +5,21 @@
 <mapper namespace="com.jmalltech.mapper.ClientMapper">
 
     <resultMap id="BaseResultMap" type="com.jmalltech.entity.Client">
-            <id property="id" column="id" jdbcType="INTEGER"/>
-            <result property="username" column="username" jdbcType="VARCHAR"/>
-            <result property="password" column="password" jdbcType="VARCHAR"/>
-            <result property="companyName" column="company_name" jdbcType="VARCHAR"/>
-            <result property="email" column="email" jdbcType="VARCHAR"/>
-            <result property="areaCode" column="area_code" jdbcType="VARCHAR"/>
-            <result property="phone" column="phone" jdbcType="VARCHAR"/>
-            <result property="address" column="address" jdbcType="VARCHAR"/>
-            <result property="city" column="city" jdbcType="VARCHAR"/>
-            <result property="state" column="state" jdbcType="VARCHAR"/>
-            <result property="country" column="country" jdbcType="VARCHAR"/>
-            <result property="createdById" column="created_by_id" jdbcType="BIGINT"/>
-            <result property="updatedById" column="updated_by_id" jdbcType="BIGINT"/>
-            <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
-            <result property="updatedDate" column="updated_date" jdbcType="TIMESTAMP"/>
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="companyName" column="company_name" jdbcType="VARCHAR"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="areaCode" column="area_code" jdbcType="VARCHAR"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+        <result property="city" column="city" jdbcType="VARCHAR"/>
+        <result property="state" column="state" jdbcType="VARCHAR"/>
+        <result property="country" column="country" jdbcType="VARCHAR"/>
+        <result property="createdById" column="created_by_id" jdbcType="BIGINT"/>
+        <result property="updatedById" column="updated_by_id" jdbcType="BIGINT"/>
+        <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+        <result property="updatedDate" column="updated_date" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <sql id="Base_Column_List">
@@ -29,4 +29,11 @@
         state,country,created_by_id,
         updated_by_id,created_date,updated_date
     </sql>
+
+    <select id="selectByUsername" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM public.mwms_client
+        WHERE username = #{username}
+    </select>
 </mapper>

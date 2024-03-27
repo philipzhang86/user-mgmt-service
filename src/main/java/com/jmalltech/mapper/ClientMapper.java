@@ -2,6 +2,7 @@ package com.jmalltech.mapper;
 
 import com.jmalltech.entity.Client;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
 * @author philipzhang
@@ -10,6 +11,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @Entity com.jmalltech.entity.Client
 */
 public interface ClientMapper extends BaseMapper<Client> {
+    Client selectByUsername(@Param("username") String username);
 
 }
 

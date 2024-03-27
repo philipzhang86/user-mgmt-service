@@ -13,20 +13,6 @@ import org.springframework.stereotype.Service;
 */
 @Service
 public class StaffServiceImpl extends ServiceImpl<StaffMapper, Staff> implements StaffService{
-    /*@Autowired
-    private StaffMapper mapper;
-
-    @Autowired
-    private StaffServiceImpl service;
-
-    @Cacheable(value = "staff", key = "#id", unless = "#result == null")
-    public Staff getById(Long id) {
-        return mapper.selectById(id);
-    }
-
-    public Staff getByUsername(String username) {
-        return mapper.selectBy
-    }*/
 }
 
 
