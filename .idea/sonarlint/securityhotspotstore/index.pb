@@ -610,3 +610,11 @@ Q.idea/sonarlint/securityhotspotstore/c/e/ce7799643a95553c6bee1d403d6cb738907a7f
 Q.idea/sonarlint/securityhotspotstore/c/8/c89ef926e5efe6af1b6ccccd2a4e8deb3b4e523f,9/9/994dca845b32fc56e410128ad50d5d2991118c1c
 Å
 Q.idea/sonarlint/securityhotspotstore/c/9/c988cc768fb08fb447127329a778380d6b72cf37,3/b/3b086076cb2995d60bfffd18ca8d0e55e33a3700
+a
+1src/main/java/com/jmalltech/StaffCRUDService.java,f/4/f440293366e9d011eb554e687573053f53d191b4
+i
+9src/main/java/com/jmalltech/service/StaffCRUDService.java,2/2/2200d321217365006773fdcceed5131e7b7e176b
+_
+/src/test/java/com/jmalltech/StaffCacheTest.java,2/7/2702b0b967c78344db85d482c15664d876aef13b
+c
+3src/test/java/com/jmalltech/StaffCRUDCacheTest.java,a/3/a3b0bde8a2c014294b415bf4b855e33a53fe84f1

@@ -3,7 +3,7 @@ package com.jmalltech;
 import com.jmalltech.entity.Staff;
 import com.jmalltech.entity.StaffRole;
 import com.jmalltech.repository.impl.StaffServiceImpl;
-import com.jmalltech.service.crud.StaffCRUDService;
+import com.jmalltech.service.StaffCRUDService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
