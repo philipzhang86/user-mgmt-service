@@ -11,6 +11,7 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -18,13 +19,13 @@ import java.util.Objects;
 public class ClientCRUDService {
     private ClientService service;
     private ClientMapper mapper;
-    @Autowired
     private CacheManager cacheManager;
 
     @Autowired
-    public ClientCRUDService(ClientService service, ClientMapper mapper) {
+    public ClientCRUDService(ClientService service, ClientMapper mapper, CacheManager cacheManager) {
         this.service = service;
         this.mapper = mapper;
+        this.cacheManager = cacheManager;
     }
 
     @Cacheable(value = "client", key = "#id", unless = "#result == null")
@@ -50,13 +51,16 @@ public class ClientCRUDService {
 
     @Caching(
             put = {
-                    @CachePut(value = "client", key = "#client.id", unless = "#result == null"),
-                    @CachePut(value = "client", key = "#client.username", unless = "#result == null")
+                    @CachePut(value = "client", key = "#client.id", condition = "#result != null", unless = "#result == null"),
+                    @CachePut(value = "client", key = "#client.username", condition = "#result != null", unless = "#result == null")
             }
     )
     public Client update(Client client) {
-        service.updateById(client);
-        return client;
+        boolean success = service.updateById(client);
+        if (!success) {
+            return null;
+        }
+        return service.getById(client.getId());
     }
 
     @Caching(

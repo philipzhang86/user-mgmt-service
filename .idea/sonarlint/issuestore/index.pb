@@ -622,3 +622,7 @@ j
 :src/main/java/com/jmalltech/service/ClientCRUDService.java,1/0/10831d8f474afa608e6b69f015b1bfeec051f0c5
 d
 4src/test/java/com/jmalltech/ClientCRUDCacheTest.java,a/c/ac24991c2e892e97a7207dd791812ef46a22dc3c
+Y
+)src/main/java/com/jmalltech/security.java,c/f/cf7390468352fd6584dceb114e045c3b7d05051a
+k
+;src/main/java/com/jmalltech/controller/StaffController.java,0/d/0d135824dfae682b274237707544fc07dccc4a7a

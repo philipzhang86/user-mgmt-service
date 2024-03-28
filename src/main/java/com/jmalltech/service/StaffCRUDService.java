@@ -36,7 +36,6 @@ public class StaffCRUDService {
         return mapper.selectByUsername(username);
     }
 
-    @CachePut(value = "staff", key = "#staff.id", unless = "#result == null")
     @CacheEvict(value = "staffList", allEntries = true)
     public Staff insert(Staff staff) {
         service.save(staff);
@@ -47,11 +46,15 @@ public class StaffCRUDService {
             evict = {
                     @CacheEvict(value = "staffList", allEntries = true)},
             put = {
-                    @CachePut(value = "staff", key = "#staff.id", unless = "#result == null"),
-                    @CachePut(value = "staff", key = "#staff.username", unless = "#result == null")})
+                    @CachePut(value = "staff", key = "#staff.id", condition = "#result != null", unless = "#result == null"),
+                    @CachePut(value = "staff", key = "#staff.username", condition = "#result != null", unless = "#result == null")})
     public Staff update(Staff staff) {
-        service.updateById(staff);
-        return staff;
+        boolean success = service.updateById(staff);
+        if (!success) {
+            // 处理更新失败的情况
+            return null;
+        }
+        return service.getById(staff.getId());
     }
 
     @Caching(evict = {
