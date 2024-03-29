@@ -46,4 +46,12 @@
             updated_by_id, created_date, updated_date
         FROM public.mwms_client
     </select>
+
+    <select id="getByUsernameAndPassword" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM public.mwms_client
+        WHERE username = #{username}
+        AND password = #{password}
+    </select>
 </mapper>

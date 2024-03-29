@@ -1,7 +1,7 @@
 package com.jmalltech;
 
 import com.jmalltech.entity.Client;
-import com.jmalltech.repository.impl.ClientServiceImpl;
+import com.jmalltech.service.ClientCRUDService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class ClientDBTest {
     @Autowired
-    private ClientServiceImpl clientService;
+    private ClientCRUDService clientService;
 
     @Test
     public void test1() {
@@ -18,16 +18,22 @@ public class ClientDBTest {
         c.setPassword("123456");
         c.setCreatedById(1L);
         c.setCompanyName("ammall");
-        clientService.save(c);
+        clientService.insert(c);
         c = clientService.getById(1L);
         c.setEmail("client1@jmalltech.com");
-        clientService.updateById(c);
+        clientService.update(c);
         System.out.println(clientService.getById(1L));
     }
 
     @Test
     public void test2(){
 
-        System.out.println(clientService.removeById(3L));
+        System.out.println(clientService.remove(3L, null));
+    }
+
+    @Test
+    public void test3(){
+        Client c = clientService.getByUsernameAndPassword("client1", "123456");
+        System.out.println(c);
     }
 }

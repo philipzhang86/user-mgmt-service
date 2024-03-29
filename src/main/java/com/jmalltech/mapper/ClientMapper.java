@@ -16,6 +16,8 @@ public interface ClientMapper extends BaseMapper<Client> {
     Client selectByUsername(@Param("username") String username);
 
     List<Client> selectClientsWithoutPassword();
+
+    Client getByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
 }
 
 

@@ -26,4 +26,12 @@
         FROM public.mwms_staff
         WHERE username = #{username}
     </select>
+
+    <select id ="getByUsernameAndPassword" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM public.mwms_staff
+        WHERE username = #{username}
+        AND password = #{password}
+    </select>
 </mapper>

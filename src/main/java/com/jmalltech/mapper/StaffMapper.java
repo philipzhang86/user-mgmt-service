@@ -12,6 +12,8 @@ import org.apache.ibatis.annotations.Param;
 */
 public interface StaffMapper extends BaseMapper<Staff> {
     Staff selectByUsername(@Param("username") String username);
+
+    Staff getByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
 }
 
 

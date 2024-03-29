@@ -26,6 +26,10 @@ public class StaffCRUDService {
         this.cacheManager = cacheManager;
     }
 
+    public Staff getByUsernameAndPassword(String username, String password) {
+        return mapper.getByUsernameAndPassword(username, password);
+    }
+
     @Cacheable(value = "staff", key = "#id", unless = "#result == null")
     public Staff getById(Long id) {
         return service.getById(id);

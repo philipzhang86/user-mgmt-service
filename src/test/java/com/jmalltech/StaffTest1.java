@@ -57,4 +57,10 @@ public class StaffTest1 {
     public void test5(){
         System.out.println(staffCRUDService.getByUsername("admin1"));
     }
+
+    @Test
+    public void test6(){
+        Staff s = staffService.getBaseMapper().getByUsernameAndPassword("admin1", "123456");
+        System.out.println(s);
+    }
 }

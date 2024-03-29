@@ -28,6 +28,10 @@ public class ClientCRUDService {
         this.cacheManager = cacheManager;
     }
 
+    public Client getByUsernameAndPassword(String username, String password) {
+        return mapper.getByUsernameAndPassword(username, password);
+    }
+
     @Cacheable(value = "client", key = "#id", unless = "#result == null")
     public Client getById(Long id) {
         return service.getById(id);
