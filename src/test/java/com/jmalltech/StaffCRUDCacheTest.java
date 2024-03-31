@@ -2,7 +2,7 @@ package com.jmalltech;
 
 import com.jmalltech.entity.Staff;
 import com.jmalltech.entity.StaffRole;
-import com.jmalltech.service.StaffCRUDService;
+import com.jmalltech.service.StaffDomainService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class StaffCRUDCacheTest {
     @Autowired
-    private StaffCRUDService staffCRUDService;
+    private StaffDomainService staffDomainService;
     @Test
     public void test1(){
         Staff s = new Staff();
@@ -18,13 +18,13 @@ public class StaffCRUDCacheTest {
         s.setUsername("operator1");
         s.setPassword("123456");
         s.setEmail("operator1@test.com");
-        staffCRUDService.insert(s);
-        s = staffCRUDService.getByUsername("operator1");
+        staffDomainService.insert(s);
+        s = staffDomainService.getByUsername("operator1");
         //s.setEmail("new_operator111@test.com");
         //System.out.println(staffCRUDService.updateStaff(s));
 //        System.out.println(staffCRUDService.getByUsername("admin1"));
 //        System.out.println(staffCRUDService.getById(1L));
-        System.out.println(staffCRUDService.getStaffList());
+        System.out.println(staffDomainService.getStaffList());
 
     }
 
@@ -32,12 +32,12 @@ public class StaffCRUDCacheTest {
 
     @Test
     public void test2(){
-        System.out.println(staffCRUDService.remove(5L));
+        System.out.println(staffDomainService.remove(5L));
     }
 
 
     @Test
     public void test3(){
-        System.out.println(staffCRUDService.getByUsername("admin1"));
+        System.out.println(staffDomainService.getByUsername("admin1"));
     }
 }

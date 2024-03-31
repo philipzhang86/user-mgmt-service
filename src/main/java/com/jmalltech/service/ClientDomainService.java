@@ -16,13 +16,13 @@ import java.util.List;
 import java.util.Objects;
 
 @Service
-public class ClientCRUDService {
+public class ClientDomainService {
     private ClientService service;
     private ClientMapper mapper;
     private CacheManager cacheManager;
 
     @Autowired
-    public ClientCRUDService(ClientService service, ClientMapper mapper, CacheManager cacheManager) {
+    public ClientDomainService(ClientService service, ClientMapper mapper, CacheManager cacheManager) {
         this.service = service;
         this.mapper = mapper;
         this.cacheManager = cacheManager;

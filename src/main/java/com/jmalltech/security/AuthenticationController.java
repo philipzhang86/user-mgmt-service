@@ -1,7 +1,7 @@
 package com.jmalltech.security;
 
 import com.jmalltech.entity.Staff;
-import com.jmalltech.service.StaffCRUDService;
+import com.jmalltech.service.StaffDomainService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AuthenticationController {
     @Autowired
-    private StaffCRUDService staffService;
+    private StaffDomainService staffService;
 
     @PostMapping("/auth/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {

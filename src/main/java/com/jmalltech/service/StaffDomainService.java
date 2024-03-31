@@ -15,12 +15,12 @@ import java.util.List;
 import java.util.Objects;
 
 @Service
-public class StaffCRUDService {
+public class StaffDomainService {
     private StaffService service;
     private StaffMapper mapper;
     private CacheManager cacheManager;
     @Autowired
-    public StaffCRUDService(StaffService service, StaffMapper mapper, CacheManager cacheManager) {
+    public StaffDomainService(StaffService service, StaffMapper mapper, CacheManager cacheManager) {
         this.service = service;
         this.mapper = mapper;
         this.cacheManager = cacheManager;

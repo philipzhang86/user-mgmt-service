@@ -1,7 +1,7 @@
 package com.jmalltech;
 
 import com.jmalltech.entity.Client;
-import com.jmalltech.service.ClientCRUDService;
+import com.jmalltech.service.ClientDomainService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class ClientDBTest {
     @Autowired
-    private ClientCRUDService clientService;
+    private ClientDomainService clientService;
 
     @Test
     public void test1() {

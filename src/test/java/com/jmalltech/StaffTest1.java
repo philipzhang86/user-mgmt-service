@@ -3,7 +3,7 @@ package com.jmalltech;
 import com.jmalltech.entity.Staff;
 import com.jmalltech.entity.StaffRole;
 import com.jmalltech.repository.impl.StaffServiceImpl;
-import com.jmalltech.service.StaffCRUDService;
+import com.jmalltech.service.StaffDomainService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +14,7 @@ public class StaffTest1 {
     private StaffServiceImpl staffService;
 
     @Autowired
-    private StaffCRUDService staffCRUDService;
+    private StaffDomainService staffDomainService;
     @Test
     public void test1() {
         Staff s = new Staff();
@@ -50,12 +50,12 @@ public class StaffTest1 {
 
     @Test
     public void test4(){
-        System.out.println(staffCRUDService.getById(1L));
+        System.out.println(staffDomainService.getById(1L));
     }
 
     @Test
     public void test5(){
-        System.out.println(staffCRUDService.getByUsername("admin1"));
+        System.out.println(staffDomainService.getByUsername("admin1"));
     }
 
     @Test
