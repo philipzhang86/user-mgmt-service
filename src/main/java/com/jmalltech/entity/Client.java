@@ -13,7 +13,7 @@ import java.util.Date;
 @Setter
 @Getter
 @ToString
-public class Client implements Serializable {
+public class Client implements Serializable, IUser{
     @TableId(type = IdType.AUTO)
     private Long id;
 

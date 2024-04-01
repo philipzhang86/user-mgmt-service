@@ -12,7 +12,7 @@ import java.util.Date;
 @Setter
 @TableName(value = "mwms_staff", schema = "public")
 @ToString
-public class Staff implements Serializable {
+public class Staff implements Serializable, IUser{
     @TableId(type = IdType.AUTO)
     private Long id;
 

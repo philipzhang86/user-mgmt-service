@@ -6,7 +6,7 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.jmalltech.entity.Staff;
+import com.jmalltech.entity.IUser;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -17,13 +17,14 @@ public class JwtUtil {
     //private static final Logger logger = LoggerFactory.getLogger(JwtUtil.class);
     private static final long EXPIRATION_TIME = 1000 * 60 * 60 * 10; // 10 hours
 
-    public static String generateToken(Staff staff){
+    public static String generateToken(IUser user, String role){
         Map<String, Object> map = new HashMap<>();
         map.put("alg", "HS256");
         map.put("typ", "JWT");
         String token = JWT.create()
-                .withClaim("id", staff.getId())
-                .withClaim("username", staff.getUsername())
+                .withClaim("id", user.getId())
+                .withClaim("username", user.getUsername())
+                .withClaim("role", role)
                 .withIssuedAt(new Date())
                 .withExpiresAt(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 .sign(Algorithm.HMAC256(SECRET_KEY));
@@ -46,9 +47,5 @@ public class JwtUtil {
         return jwt.getClaims();
     }
 
-//    public static String getUserIdFromToken(String token){
-//        DecodedJWT jwt = JWT.decode(token);
-//        return jwt.getSubject();
-//    }
 
 }

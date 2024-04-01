@@ -1236,3 +1236,11 @@ l
 <src/main/java/com/jmalltech/service/ClientDomainService.java,9/d/9dfbbe558d31e5d81129be260e15947c8a490a47
 f
 6src/main/java/com/jmalltech/helper/ResponseHelper.java,a/0/a0554bbb8cd3436c2f6e51cd13afc8d40b723a7d
+\
+,src/main/java/com/jmalltech/entity/User.java,7/4/74b1308e56dcafeaaf3de14a9ba4ed3701974c14
+]
+-src/main/java/com/jmalltech/entity/IUser.java,8/d/8dd16185b2252e2934d460526de18298eeae5c73
+D
+security-lib/pom.xml,b/0/b09d7b17b6cc93c81e36b0c4031d9d9513d29d8f
+b
+2security-lib/src/main/java/com/jmalltech/Main.java,a/3/a3dd0d03540993dee427792de68bf89e7f1d7973

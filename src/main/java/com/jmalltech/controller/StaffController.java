@@ -106,7 +106,7 @@ public class StaffController {
         return ResponseEntity.ok(createdClient);
     }
 
-    @PutMapping("/client")
+    @PutMapping("/client")//update must come with id and username, otherwise it will cause cache exception
     public ResponseEntity<?> updateClient(@RequestBody Client client) {
         Client updatedClient = clientService.update(client);
         if (updatedClient != null) {
