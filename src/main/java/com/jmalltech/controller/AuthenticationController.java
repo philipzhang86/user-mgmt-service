@@ -1,8 +1,12 @@
-package com.jmalltech.security;
+
+package com.jmalltech.controller;
 
 import com.jmalltech.entity.IUser;
 import com.jmalltech.service.ClientDomainService;
 import com.jmalltech.service.StaffDomainService;
+import com.jmalltech.util.JwtUtil;
+import com.jmalltech.util.LoginRequest;
+import com.jmalltech.util.TokenResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,23 +17,23 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AuthenticationController {
     @Autowired
-    private StaffDomainService staffService;
+    private ClientDomainService clientDomainService;
 
     @Autowired
-    private ClientDomainService clientService;
-
+    private StaffDomainService staffDomainService;
 
     @PostMapping("/auth/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {
         System.out.println("Attempting to login with username: " + loginRequest.getUsername());
 
-        IUser user = staffService.getByUsernameAndPassword(loginRequest.getUsername(), loginRequest.getPassword());
+        IUser user = staffDomainService.getByUsernameAndPassword(loginRequest.getUsername(), loginRequest.getPassword());
         String role = null;
-        if(user != null){
-            role ="STAFF";
-        }else {
-            user = clientService.getByUsernameAndPassword(loginRequest.getUsername(), loginRequest.getPassword());
-            if(user != null){
+
+        if(user != null) {
+            role = "STAFF";
+        } else {
+            user = clientDomainService.getByUsernameAndPassword(loginRequest.getUsername(), loginRequest.getPassword());
+            if(user != null) {
                 role = "CLIENT";
             }
         }
@@ -43,3 +47,4 @@ public class AuthenticationController {
         }
     }
 }
+

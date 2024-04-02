@@ -5,10 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
-@MapperScan(basePackages = {"com.jmalltech.mapper"})
+@MapperScan(basePackages = {"com.jmalltech.mapper","com.jmalltech.security.mapper"})
 @EnableCaching
 @SpringBootApplication
 //@EnableDiscoveryClient
+//@ComponentScan(basePackages ={"com" })
 public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);

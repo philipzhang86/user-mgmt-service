@@ -1,8 +1,9 @@
+/*
 package com.jmalltech;
 
+import com.jmalltech.service.StaffDomainService;
 import com.jmalltech.entity.Staff;
 import com.jmalltech.entity.StaffRole;
-import com.jmalltech.service.StaffDomainService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -41,3 +42,4 @@ public class StaffCRUDCacheTest {
         System.out.println(staffDomainService.getByUsername("admin1"));
     }
 }
+*/

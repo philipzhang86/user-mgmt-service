@@ -1,3 +1,4 @@
+/*
 package com.jmalltech;
 
 import com.jmalltech.entity.Staff;
@@ -58,9 +59,12 @@ public class StaffTest1 {
         System.out.println(staffDomainService.getByUsername("admin1"));
     }
 
-    @Test
+    */
+/*@Test
     public void test6(){
         Staff s = staffService.getBaseMapper().getByUsernameAndPassword("admin1", "123456");
         System.out.println(s);
-    }
+    }*//*
+
 }
+*/

@@ -1,10 +1,10 @@
 package com.jmalltech.controller;
 
+import com.jmalltech.service.ClientDomainService;
+import com.jmalltech.service.StaffDomainService;
 import com.jmalltech.entity.Client;
 import com.jmalltech.entity.Staff;
 import com.jmalltech.helper.ResponseHelper;
-import com.jmalltech.service.ClientDomainService;
-import com.jmalltech.service.StaffDomainService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
