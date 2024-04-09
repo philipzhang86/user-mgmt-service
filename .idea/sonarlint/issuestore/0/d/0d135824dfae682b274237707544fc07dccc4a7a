@@ -1,21 +1,25 @@
 
-i
-java:S1452"&Remove usage of generic wildcard type.(­×á€8¹Ûş’é1J$52f9dbec-536d-4638-bcef-11bc0147e84f
-i
-java:S1452&"&Remove usage of generic wildcard type.(öƒŞ¼8»Ûş’é1J$77a097ca-639c-4ae0-8ab3-a1e963694288
-i
-java:S14526"&Remove usage of generic wildcard type.(šÓ§8»Ûş’é1J$4602b9e4-40c8-46e9-8768-c24007764255
-i
-java:S1452@"&Remove usage of generic wildcard type.(Øá®Ã8¼Ûş’é1J$ecef4fbb-6b5c-4a92-9559-75217d0267eb
+œ
+java:S41441"YUpdate this method so that its implementation is not identical to "getMyInfo" on line 29.(öƒŞ¼8ü‰¦ì1J$b08e8e83-8ccd-4017-9a98-5b512e26e37f
 n
-java:S1452J"&Remove usage of generic wildcard type.(ª¾õËşÿÿÿÿ8½Ûş’é1J$679252d2-2f4e-4dca-a407-f0d2b62b3553
+java:S1452"&Remove usage of generic wildcard type.(‚£óÀøÿÿÿÿ8¹Ûş’é1J$eb7dd230-ac28-4184-be8d-127ae1e853b3
+i
+java:S1452'"&Remove usage of generic wildcard type.(­×á€8»Ûş’é1J$e0b71ffa-a9d9-4dc2-83dd-b2811709eb12
+i
+java:S14521"&Remove usage of generic wildcard type.(öƒŞ¼8»Ûş’é1J$1ac87446-65b9-4ae7-92eb-f50842b1a8e3
+i
+java:S1452A"&Remove usage of generic wildcard type.(šÓ§8¼Ûş’é1J$e32024de-bae8-4252-8d18-985b79dcfd83
+i
+java:S1452K"&Remove usage of generic wildcard type.(Øá®Ã8½Ûş’é1J$f521f74d-2239-4356-ab9b-7b65e6036d4c
 n
-java:S1452T"&Remove usage of generic wildcard type.(•úÑñøÿÿÿÿ8½Ûş’é1J$0fbab47e-66ae-494f-91ca-681ced93c434
+java:S1452U"&Remove usage of generic wildcard type.(ª¾õËşÿÿÿÿ8½Ûş’é1J$766a25b1-95b6-42c3-927c-d19c85132bb8
 n
-java:S1452^"&Remove usage of generic wildcard type.(Æ©ú‰ûÿÿÿÿ8½Ûş’é1J$05fb12f8-e0e5-429c-a360-950cc7cd2e44
+java:S1452_"&Remove usage of generic wildcard type.(•úÑñøÿÿÿÿ8½Ûş’é1J$1150a78f-4813-4821-ade3-9344ac3a9143
 n
-java:S1452n"&Remove usage of generic wildcard type.(²ª¦’øÿÿÿÿ8¾Ûş’é1J$1a5c399f-a1c9-4f83-ac49-33bc49abf5fa
+java:S1452i"&Remove usage of generic wildcard type.(Æ©ú‰ûÿÿÿÿ8¾Ûş’é1J$cab47186-226b-4b47-b77d-1f8a3a1258da
+n
+java:S1452y"&Remove usage of generic wildcard type.(²ª¦’øÿÿÿÿ8¿Ûş’é1J$621c1131-c27b-4f89-aad9-466b105a22fe
 o
-java:S1452€"&Remove usage of generic wildcard type.(ü¢ ­ûÿÿÿÿ8¿Ûş’é1J$5e2feb6d-b792-4c58-b073-e4b0082bd898
+java:S1452‹"&Remove usage of generic wildcard type.(ü¢ ­ûÿÿÿÿ8„¨‹“é1J$2e5e2ca9-3f52-4edf-b78f-3bd5b1db69d0
 o
-java:S1452"&Remove usage of generic wildcard type.(‹”‡ßúÿÿÿÿ8„¨‹“é1J$30030263-607d-4355-9189-04d996b6fb44
+java:S1452š"&Remove usage of generic wildcard type.(‹”‡ßúÿÿÿÿ8‡‰¦ì1J$e6790fd0-cb2e-43a0-a954-e2b21c6244ef

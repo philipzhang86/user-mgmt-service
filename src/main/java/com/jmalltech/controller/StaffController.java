@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/staffs")
+@CrossOrigin(origins = "http://localhost:4200") // 允许http://localhost:4200来源的跨源请求
 public class StaffController {
     private StaffDomainService staffService;
 
@@ -22,6 +23,16 @@ public class StaffController {
     public StaffController(StaffDomainService staffService, ClientDomainService clientService) {
         this.staffService = staffService;
         this.clientService = clientService;
+    }
+
+    @GetMapping("/my-info")
+    public ResponseEntity<?> getMyInfo(@RequestAttribute("username") String username) {
+        Staff staff = staffService.getByUsername(username);
+        if (staff != null) {
+            return ResponseEntity.ok(staff);
+        } else {
+            return ResponseHelper.notFoundResponse("Staff not found for username: " + username);
+        }
     }
 
     @GetMapping("/{id}")
