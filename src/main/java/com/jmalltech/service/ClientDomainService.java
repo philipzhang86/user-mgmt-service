@@ -57,7 +57,12 @@ public class ClientDomainService {
             put = {
                     @CachePut(value = "client", key = "#client.id", condition = "#result != null", unless = "#result == null"),
                     @CachePut(value = "client", key = "#client.username", condition = "#result != null", unless = "#result == null")
+            },
+            evict = {
+                    @CacheEvict(value = "confidentialClientList", allEntries = true),
+                    @CacheEvict(value = "clientList", allEntries = true)
             }
+
     )
     public Client update(Client client) {
         boolean success = service.updateById(client);

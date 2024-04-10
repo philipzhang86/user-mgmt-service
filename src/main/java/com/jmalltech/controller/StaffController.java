@@ -75,7 +75,7 @@ public class StaffController {
     public ResponseEntity<?> deleteStaff(@PathVariable Long id) {
         boolean isRemoved = staffService.remove(id);
         if (isRemoved) {
-            return ResponseEntity.ok().build();
+            return ResponseEntity.ok().body("{\"message\": \"Staff removed successfully.\"}");
         } else {
             return ResponseHelper.notFoundResponse("Staff not found for ID: " + id);
         }
@@ -144,7 +144,7 @@ public class StaffController {
 
         boolean removed = clientService.remove(id, username);
         if (removed) {
-            return ResponseEntity.ok().body("Client removed successfully.");
+            return ResponseEntity.ok().body("{\"message\": \"Client removed successfully.\"}");
         } else {
             return ResponseHelper.notFoundResponse("Client not found.");
         }
