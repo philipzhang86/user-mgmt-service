@@ -1,4 +1,3 @@
-/*
 package com.jmalltech;
 
 import com.jmalltech.entity.Client;
@@ -32,12 +31,18 @@ public class ClientDBTest {
         System.out.println(clientService.remove(3L, null));
     }
 
-    */
-/*@Test
+    @Test
     public void test3(){
         Client c = clientService.getByUsernameAndPassword("client1", "123456");
         System.out.println(c);
-    }*//*
+    }
+
+    @Test
+    public void test4(){
+        Client c = clientService.getById(5L);
+        c.setAreaCode("98052");
+        clientService.update(c);
+        System.out.println(clientService.getById(5L));
+    }
 
 }
-*/

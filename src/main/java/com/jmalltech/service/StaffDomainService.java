@@ -30,7 +30,7 @@ public class StaffDomainService {
         return mapper.getByUsernameAndPassword(username, password);
     }
 
-    @Cacheable(value = "staff", key = "#id", unless = "#result == null")
+    @Cacheable(value = "staff", key = "#id.toString()", unless = "#result == null")
     public Staff getById(Long id) {
         return service.getById(id);
     }
@@ -50,7 +50,7 @@ public class StaffDomainService {
             evict = {
                     @CacheEvict(value = "staffList", allEntries = true)},
             put = {
-                    @CachePut(value = "staff", key = "#staff.id", condition = "#result != null", unless = "#result == null"),
+                    @CachePut(value = "staff", key = "#staff.id.toString()", condition = "#result != null", unless = "#result == null"),
                     @CachePut(value = "staff", key = "#staff.username", condition = "#result != null", unless = "#result == null")})
     public Staff update(Staff staff) {
         boolean success = service.updateById(staff);
@@ -62,7 +62,7 @@ public class StaffDomainService {
     }
 
     @Caching(evict = {
-            @CacheEvict(value = "staff", key = "#id"), // delete single staff cache by id
+            @CacheEvict(value = "staff", key = "#id.toString()"), // delete single staff cache by id
             @CacheEvict(value = "staffList", allEntries = true) // delete staff list cache simultaneously
     })
     public boolean remove(Long id) {

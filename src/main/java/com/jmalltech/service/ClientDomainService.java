@@ -32,7 +32,7 @@ public class ClientDomainService {
         return mapper.getByUsernameAndPassword(username, password);
     }
 
-    @Cacheable(value = "client", key = "#id", unless = "#result == null")
+    @Cacheable(value = "client", key = "#id.toString()", unless = "#result == null")
     public Client getById(Long id) {
         return service.getById(id);
     }
@@ -55,7 +55,7 @@ public class ClientDomainService {
 
     @Caching(
             put = {
-                    @CachePut(value = "client", key = "#client.id", condition = "#result != null", unless = "#result == null"),
+                    @CachePut(value = "client", key = "#client.id.toString()", condition = "#result != null", unless = "#result == null"),
                     @CachePut(value = "client", key = "#client.username", condition = "#result != null", unless = "#result == null")
             },
             evict = {
@@ -94,7 +94,7 @@ public class ClientDomainService {
     }
 
     private void clearUserCache(Long id, String username) {
-        Objects.requireNonNull(cacheManager.getCache("client")).evict(id);
+        Objects.requireNonNull(cacheManager.getCache("client")).evict(id.toString());
         Objects.requireNonNull(cacheManager.getCache("client")).evict(username);
     }
 
